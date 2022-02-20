@@ -20,13 +20,14 @@ const Form = ({ todoState: { todoList, setTodoList } }) => {
   return (
     <div className="todo-txt">
       <form onSubmit={handleSubmit}>
-        <label className="add-new-text">Add new todo</label>
+        <label className="add-new-text">Add new to-do</label>
         <div className="inputAndButton">
           <input
             className="input"
             type="text"
             value={newTodo}
             onChange={(e) => setNewTodo(e.target.value)}
+            placeholder="Input to-do text here"
           />
           <button className="todo-button" type="submit">
             Save

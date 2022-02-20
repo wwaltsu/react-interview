@@ -10,17 +10,17 @@ body {
 .todo-complete {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 4px auto;
-  color: #fff;
+  color: #f1faee;
   padding: 16px;
   border-radius: 8px;
-  width: 90%;
   justify-content: space-between;
   text-decoration: line-through;
   text-decoration-color: red;
   text-decoration-thickness: 2px;
   opacity: 50%;
+  background-color: #1d3557;
+  border: 3px solid #f1faee;
 }
 
 .todo-incomplete {
@@ -30,7 +30,6 @@ body {
   color: #f1faee;
   padding: 16px;
   border-radius: 8px;
-  width: 90%;
   background-color: #1d3557;
   border: 3px solid #f1faee;
 }

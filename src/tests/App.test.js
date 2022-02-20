@@ -1,13 +1,15 @@
 import React from "react"
 import App from "../App"
 import "@testing-library/jest-dom/extend-expect"
-import { render } from "@testing-library/react"
+import { cleanup, render } from "@testing-library/react"
+
+afterEach(cleanup)
 
 describe("<App />", () => {
-  test("Testing App commponent text content", async () => {
+  test("Testing text content", async () => {
     const component = render(<App />)
     component.rerender(<App />)
 
-    expect(component.container).toHaveTextContent("Todo app")
+    expect(component.container).toHaveTextContent("To-Do App")
   })
 })

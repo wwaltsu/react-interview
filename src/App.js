@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div>
-      <h3 className="todo-app-headline">Todo app</h3>
+      <h3 className="todo-app-headline">To-Do App</h3>
       <Form todoState={{ todoList, setTodoList }} />
       <TodoList todoState={{ todoList, setTodoList }} />
     </div>
