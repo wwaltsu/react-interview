@@ -7,12 +7,14 @@ import { jest } from "@jest/globals"
 
 afterEach(cleanup)
 
-test("Form updates state when save button is clicked", () => {
+test("Input should have value after typing to it", () => {
   const todoList = ""
   const setTodoList = jest.fn()
-  const component = render(<Form todoState={{ todoList, setTodoList }} />)
-  const form = component.container.querySelector("#todo-input")
-  const input = screen.getByPlaceholderText("Input to-do text here")
-  userEvent.type(input, "testing an input...")
-  expect(form).toHaveTextContent("testing an input...")
+
+  render(<Form todoState={{ todoList, setTodoList }} />)
+
+  const inputEl = screen.getByTestId("todo-input")
+
+  userEvent.type(inputEl, "Testing an input form")
+  expect(screen.getByTestId("todo-input")).toHaveValue("Testing an input form")
 })

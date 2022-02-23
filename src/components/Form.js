@@ -23,7 +23,7 @@ const Form = ({ todoState: { todoList, setTodoList } }) => {
         <label className="add-new-text">Add new to-do</label>
         <div className="inputAndButton">
           <input
-            id="todo-input"
+            data-testid="todo-input"
             className="input"
             type="text"
             value={newTodo}
