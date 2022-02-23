@@ -10,7 +10,7 @@ const TodoList = ({ todoState: { todoList, setTodoList } }) => {
   }
 
   // Changes todo from false to true and true to false on click
-  const completeTodo = (id) => {
+  const handlehandleCompleteTodo = (id) => {
     let updateTodo = todoList.map((todo) => {
       if (todo.id === id) {
         todo.complete = !todo.complete
@@ -28,7 +28,7 @@ const TodoList = ({ todoState: { todoList, setTodoList } }) => {
             key={todo.id}
             todo={todo}
             onRemove={handleTodoRemove}
-            onComplete={completeTodo}
+            onComplete={handlehandleCompleteTodo}
           />
         ))}
       </ul>

@@ -10,11 +10,21 @@ const Todo = ({ todo, onComplete, onRemove }) => (
   >
     <div>{todo.name}</div>
     <div>
-      <button type="button" onClick={() => onComplete(todo.id)}>
+      <button
+        className="button-style"
+        type="button"
+        id="onComplete"
+        onClick={() => onComplete(todo.id)}
+      >
         <MdDoneOutline />
       </button>
-      <button type="button" onClick={() => onRemove(todo.id)}>
-        <GoTrashcan />
+      <button
+        className="button-style"
+        type="button"
+        id="onRemove"
+        onClick={() => onRemove(todo.id)}
+      >
+        <GoTrashcan id="complete-btn" />
       </button>
     </div>
   </div>
