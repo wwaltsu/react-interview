@@ -29,7 +29,7 @@ const Form = ({ todoState: { todoList, setTodoList } }) => {
             onChange={(e) => setNewTodo(e.target.value)}
             placeholder="Input to-do text here"
           />
-          <button className="todo-button" type="submit">
+          <button className="save-todo-btn" type="submit">
             Save
           </button>
         </div>
