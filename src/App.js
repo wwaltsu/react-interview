@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import "./App.css"
 import Form from "./components/Form"
 import TodoList from "./components/TodoList"
-import data from "./data.js"
+import data from "./data/data"
 
 const App = () => {
   const [todoList, setTodoList] = useState(data)
